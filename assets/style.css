@@ -4,3 +4,8 @@
 .byline {
 	margin-top: 2px;
 }
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
