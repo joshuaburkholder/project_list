@@ -1,10 +1,12 @@
-$('radioBtn a').on('click', function(){
+$(document).ready(function(){
+
+$('#radioBtn a').on('click', function(){
 	var sel = $(this).data('title');
 	var tog = $(this).data('toggle');
 	$('#'+tog).prop('value', sel);
 
-	$('a[data-gottle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
-	$('a[data-gottle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+	$('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+	$('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
 
 	var regex = new RegExp(sel, "i");
 	var output = '<div class="row">';
@@ -14,7 +16,7 @@ $('radioBtn a').on('click', function(){
 		  	const imageLink = val.hasOwnProperty("img") ? val.img : 'project.jpg'
 		  	output += '<div class="well well-sm">';
 		  	output += '<div class="row"><div class="col-sm-3">';
-		  	output += '<img src="img/' + imageLink + '" class="img-responsive center-block">';
+		  	output += '<img src="assets/img/' + imageLink + '" class="img-responsive center-block">';
 		  	output += '</div><div class="col-sm-9">';
 		  	output += '<h4>' + val.title + '</h4>';
 		  	output += '<p>' + val.description + '</p><p>';
@@ -23,7 +25,7 @@ $('radioBtn a').on('click', function(){
 		  		if(val.github) output += '<a href="' + val.github + '" target="_blank">Github</a>';
 		  	output += '</p>'
 		  	tags.forEach(function(tag){
-		  		output += '<div class="tag">' + tag + '</div';
+		  		output += '<div class="tag">' + tag + '</div>';
 		  	});
 		  	output += '</div></div></div>';
 		  }
@@ -33,3 +35,6 @@ $('radioBtn a').on('click', function(){
 })
 
 document.getElementById('start').click();
+$('#total').text(projects.length);
+
+});

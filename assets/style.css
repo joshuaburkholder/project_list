@@ -6,6 +6,42 @@
 }
 
 #radioBtn .notActive{
-    color: #3276b1;
-    background-color: #fff;
+    color: white;
+    background-color: darkgray;
+}
+
+#radioBtn .active{
+    color: #FFF;
+    background-color: #337ab7;
+}
+
+.tag {
+  display:inline;
+  color: #f5f5f5;
+  background-color: #337ab7;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.selectTech {
+  padding: 5px;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+.btn {
+  margin-bottom: 3px;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+div.col-sm-9 p > a {
+	color: #337ab7;
+	font-weight: bolder;
 }
