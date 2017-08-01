@@ -1,3 +1,3 @@
-"# project_list" 
+# project_list
 
 A list of projects
