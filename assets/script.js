@@ -16,7 +16,7 @@ $('#radioBtn a').on('click', function(){
 		  	const imageLink = val.hasOwnProperty("img") ? val.img : 'project.jpg'
 		  	output += '<div class="well well-sm">';
 		  	output += '<div class="row"><div class="col-sm-3">';
-		  	output += '<img src="' + imageLink + '" class="img-responsive center-block">';
+		  	output += '<img src="' + imageLink + '" class="img-responsive img-rounded center-block">';
 		  	output += '</div><div class="col-sm-9">';
 		  	output += '<h4>' + val.title + '</h4>';
 		  	output += '<p>' + val.description + '</p><p>';
