@@ -56,3 +56,12 @@ div.col-sm-9 p > a {
   -moz-box-shadow: inset 0px 0px 13px -4px rgba(51,121,182,1), 0px 0px 13px -2px rgba(0,0,0,1);
   box-shadow: inset 0px 0px 13px -4px rgba(51,121,182,1), 0px 0px 13px -2px rgba(0,0,0,1);
 }
+
+img {
+	max-height: 200px;
+}
+
+h4{
+	margin-top: 10px;
+	font-weight: bolder;
+}
